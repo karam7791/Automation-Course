@@ -13,11 +13,11 @@ public class UploadFileFromPc extends Setup {
 
     @Test
 
-    public void testUploadFileFromPc() {
+    public void testUploadFileFromPc() throws InterruptedException {
         driver.findElement(By.linkText("File Upload")).click();
         WebElement fileupload = driver.findElement(By.id("file-upload"));
-        fileupload.click();
         fileupload.sendKeys("C:\\Automation.txt");
+        driver.findElement(By.id("file-submit")).click();
         String excpectedResult = "Automation.txt";
         String actualResult= driver.findElement(By.id("uploaded-files")).getText();
         assertTrue(actualResult.contains(excpectedResult));

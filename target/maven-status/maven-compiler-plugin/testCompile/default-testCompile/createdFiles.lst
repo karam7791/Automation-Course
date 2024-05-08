@@ -1,0 +1,5 @@
+loginTests\TestLogin.class
+baseTest\Setup.class
+uploadFile\UploadFileFromPc.class
+forgetPassword\ForgetPasswordTest.class
+checkBoxes\CheckAndUncheckBoxes.class

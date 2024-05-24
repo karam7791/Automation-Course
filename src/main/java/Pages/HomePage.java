@@ -21,4 +21,9 @@ public class HomePage {
         driver.findElement(formAuthenticationLink).click();
         return new LoginPage(driver);
     }
+
+    public DynamicLoadingPage clickOnDynamicLoadingLink(){
+        driver.findElement(dynamicLoadingLink).click();
+        return new DynamicLoadingPage(driver);
+    }
 }
